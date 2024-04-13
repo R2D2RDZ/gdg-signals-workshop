@@ -10,13 +10,14 @@ export const routes: Routes = [
     path: 'characters',
     children: [
       {
-        path: '', // http://localhost:4200/characters
-        pathMatch: 'full',
+        path: 'old', // http://localhost:4200/characters
+        
         loadComponent: () =>
           import('./pages/list/list.page').then((m) => m.ListPage),
       },
       {
-        path: 'signals', // http://localhost:4200/characters/signals
+        path: '', // http://localhost:4200/characters/signals
+        pathMatch: 'full',
         loadComponent: () =>
           import('./pages/list-signal/list.page').then((m) => m.ListSignalPage),
       },

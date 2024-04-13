@@ -10,4 +10,14 @@
       <ion-title size="large">detail</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card>
+    <img [src]="character()?.image" alt="No photo">
+    <ion-icon name="male" color="primary"></ion-icon>
+    <ion-card-header>
+      <ion-card-title>{{character()?.name}}</ion-card-title>
+      <ion-card-subtitle>{{character()?.location?.name}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
+

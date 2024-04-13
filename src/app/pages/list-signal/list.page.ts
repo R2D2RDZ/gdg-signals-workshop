@@ -24,6 +24,7 @@ import {
   IonToolbar,
   IonButtons,
   IonBadge,
+  IonSearchbar
 } from '@ionic/angular/standalone';
 import { AsyncPipe } from '@angular/common';
 import { CharacterService } from '../../services/character.service';
@@ -74,6 +75,7 @@ import { RouterLink } from '@angular/router';
     RouterLink,
     IonButtons,
     IonBadge,
+    IonSearchbar
   ],
 })
 export class ListSignalPage {
